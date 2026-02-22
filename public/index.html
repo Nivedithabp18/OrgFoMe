@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="description" content="Niveditha's Personal Organizer — Documents, Subjects, Projects, Links & To-Do" />
+    <title>Niveditha — Personal Organizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 0; font-family: 'DM Sans', sans-serif; }
+      html, body, #root { height: 100%; }
+
+      /* Tooltip for mobile nav */
+      .mnav-tip {
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(26, 26, 46, 0.9);
+        color: #fff;
+        padding: 3px 8px;
+        border-radius: 6px;
+        font-size: 10px;
+        font-family: 'DM Sans', sans-serif;
+        white-space: nowrap;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.15s;
+        z-index: 9999;
+      }
+      .mnav-btn { position: relative; display: inline-flex; }
+      .mnav-btn:hover .mnav-tip,
+      .mnav-btn:focus-within .mnav-tip { opacity: 1; }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar { width: 4px; height: 4px; }
+      ::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
